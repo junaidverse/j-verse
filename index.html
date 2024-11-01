@@ -1,131 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We're available for marketing</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./We&#39;re available for marketing_files/favicon.png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/favicon.png"
+    />
+    <title>We're available for marketing</title>
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<body id="top" data-new-gr-c-s-check-loaded="14.1205.0" data-gr-ext-installed="">
-  <header>
-    <div class="container">
-      <a href="https://www.yoursoftteam.com/">
-        <img src="./We&#39;re available for marketing_files/logo.png" alt="logo">
-      </a>
-      <nav class="navbar container">
-        <ul class="navbar-list">
-          <li>
-            <a href="https://www.yoursoftteam.com/">Home</a>
-          </li>
-          <li>
-            <a href="https://www.yoursoftteam.com/#service">Services</a>
-          </li>
-          <li>
-            <a href="https://www.yoursoftteam.com/#BrandingHacks">#BrandingHacks</a>
-          </li>
-          <li>
-            <a href="https://www.yoursoftteam.com/#contact">Contact Us</a>
-          </li>
-          <li>
-            <a href="https://www.yoursoftteam.com/#contact" class="btn btn-primary">Get an Estimation</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="nav-toggle-btn" aria-label="Toggle menu">
-        <ion-icon name="menu-outline" role="img" aria-label="menu outline"></ion-icon>
-        <ion-icon name="close-outline" role="img" aria-label="close outline"></ion-icon>
-      </button>
-    </div>
-  </header>
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <main>
-    <article>
-      <section class="section hero" id="home" aria-label="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="h1 hero-title">
-              A Cutting-Edge Agency Offering Full-Service Solutions
-            </h1>
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
 
-            <p class="hero-text">
-              Tailored To Digital Marketing, Social Media Management,
-              E-commerce, Market Research, Website Development, and App Creation!
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#">
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+            <li>
+              <a href="#BrandingHacks" class="navbar-link" data-nav-link>#BrandingHacks</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="btn btn-primary" data-nav-link
+                >Get an Estimation</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">              
+              <h1 class="h1 hero-title">
+                A Cutting-Edge Agency Offering Full-Service Solutions
+              </h1>
+
+              <p class="hero-text">
+                Tailored To Digital Marketing, Social Media Management,
+                E-commerce, Market Research, Website Development, and App Creation!
+              </p>
+              
+              <a href="#contact" class="btn btn-primary" data-nav-link>
+                Get an Estimation
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="720"
+                height="673"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <h2 class="h2 section-title">Services Tailored to Your Needs</h2>
+
+            <p class="section-text">
+              Welcome to Your Soft Team's comprehensive suite of digital solutions. 
+              Our dedicated team specializes in crafting tailored strategies to meet
+              your unique business objectives.
             </p>
 
-            <a href="https://www.yoursoftteam.com/#contact" class="btn btn-primary">
-              Get an Estimation
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #6610f2">
+                    <ion-icon name="desktop"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Digital Marketing</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Our team of experts crafts bespoke digital marketing
+                    strategies tailored to your unique goals and target
+                    audience. From SEO and PPC to content marketing and email
+                    campaigns, we leverage the latest tools and techniques to
+                    maximize your online visibility and drive meaningful
+                    results.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #13c4a1">
+                    <ion-icon name="settings"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Social Media Management</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Engage, inspire, and connect with your audience on social
+                    media. We specialize in creating dynamic and impactful
+                    social media campaigns that resonate with your followers,
+                    build brand loyalty, and drive conversions.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #ff612f">
+                    <ion-icon name="code"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Website Development</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Ready to take your online store to the next level? We
+                    specialize in developing robust e-commerce solutions that
+                    streamline your sales process, enhance customer
+                    satisfaction, and boost your bottom line. From inventory
+                    management to payment gateways, we handle it all so you can
+                    focus on growing your business.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #ffb700">
+                    <ion-icon name="phone-portrait"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">App Creation</a>
+                  </h3>
+
+                  <p class="card-text">     
+                    Stand out in the crowded app marketplace with a custom-designed mobile
+                    application. Our talented team of developers creates intuitive and
+                    feature-rich apps that captivate users and drive engagement. Whether you're
+                    launching a new app or need to optimize an existing one, we're here to turn
+                    your vision into reality.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #00d280">
+                    <ion-icon name="cart"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">E-commerce Solutions</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Ready to take your online store to the next level? We specialize in
+                    developing robust e-commerce solutions that streamline your sales process,
+                    enhance customer satisfaction, and boost your bottom line. From inventory
+                    management to payment gateways, we handle it all so you can focus on growing
+                    your business.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #ff612f">
+                    <ion-icon name="search"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Market Research</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Gain valuable insights into your target market, industry trends, and
+                    competitive landscape with our comprehensive market research services. Armed
+                    with data-driven insights, we'll help you make informed decisions and
+                    develop strategies that resonate with your audience and drive results.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section
+          class="section cta"
+          aria-label="cta"
+          style="background-image: url('./assets/images/cta-bg.jpg')"
+        >
+          <div class="container">
+            <p class="cta-subtitle">So What is Next?</p>
+
+            <h2 class="h2 section-title">Are You Ready? Let's get to Work!</h2>
+
+            <a href="#contact" class="btn btn-secondary" data-nav-link>Get Started</a>
+          </div>
+        </section>
+
+        <!-- 
+          Image Slider
+      -->
+
+        <section class="section imageSlider" id="BrandingHacks" aria-label="BrandingHacks">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Branding Bites: Quick and Easy Hacks to Spice Up Your Business!
+            </h2>
+
+            <p class="section-text">
+              Delve into Our Collection of Expert
+              <b>#BrandingHacks</b> and Propel Your Business to New Heights.
+              Uncover Proven Tactics to Elevate Your Brand's Presence and
+              Impact.
+            </p>
+
+            <div class="slider">
+              <div class="slides">
+                <div class="slide"><img src="./assets/images/image_1.gif" alt="Slide 1"></div>
+                <div class="slide"><img src="./assets/images/image_2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./assets/images/image_3.png" alt="Slide 2"></div>
+                <div class="slide"><img src="./assets/images/image_4.gif" alt="Slide 2"></div>
+              </div>
+              <button class="prev" onclick="prevSlide()">&larr;</button>
+              <button class="next" onclick="nextSlide()">&rarr;</button>
+            </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <h2 class="h2 section-title">Let's Contact With Us</h2>
+
+            <p class="section-text">
+              FOR A QUICK ESTIMATE
+            </p>
+
+            <form
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7gJzz0TxemDlc2hPQQ3FhDE_yiCS-jy7WCH7WRkpa_FINsw/formResponse"
+              class="contact-form"
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="entry.1761816558"
+                  aria-label="name"
+                  placeholder="Your name*"
+                  class="input-field"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="entry.1121706981"
+                  aria-label="email"
+                  placeholder="Email address*"
+                  class="input-field"
+                  required
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="entry.2094250323"
+                  aria-label="subject"
+                  placeholder="Subject"
+                  class="input-field"
+                  required
+                />
+
+                <input
+                  type="number"
+                  name="entry.1413167320"
+                  aria-label="phone"
+                  placeholder="Phone number"
+                  class="input-field"
+                  required
+                />
+              </div>
+
+              <textarea
+                name="entry.1773774609"
+                aria-label="message"
+                placeholder="Your message...*"
+                class="input-field"
+                required
+              ></textarea>
+
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="terms_and_policy"
+                  id="terms"
+                  class="checkbox"
+                  required
+                />
+
+                <label for="terms" class="label">
+                  Accept
+                  <a
+                    href="https://docs.google.com/document/d/1O6yUzj-UeJxb9znoFq6PP0s_Dy4NpJ3Te0YB5Qgjitw/edit"
+                    target="_blank"
+                    class="label-link"
+                    >Terms of Services</a
+                  >
+                  and
+                  <a
+                    href="https://docs.google.com/document/d/1Ag121_25ZYbP0FKHS7-Hl5oLwWT7m2LRpoA-Izjj5eg/edit"
+                    target="_blank"
+                    class="label-link"
+                    >Privacy Policy</a
+                  >
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+                        <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Email Here</h3>
+
+                    <a href="mailto:info@YourSoftTeam.com" class="card-link"
+                      >info@YourSoftTeam.com</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Visit Here</h3>
+
+                    <address class="card-address">
+                      RC62 Khurramabad Landhi 2<br />
+                      Karachi 75160
+                    </address>
+                  </div>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="headset-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Call Here</h3>
+
+                    <a href="tell:+923473527369" class="card-link"
+                      >+92 347 352 7369</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="160"
+                height="70"
+                alt="logo"
+                class="logo"
+              />
             </a>
+
+            <p class="footer-brand-text">
+              A Cutting-Edge Agency Offering Full-Service Solutions. Tailored To
+              Digital Marketing, Social Media Management, E-commerce, Website
+              Development, and App Creation!
+            </p>
+
+            <ul class="footer-icons">
+              <li>
+                <a href="https://www.linkedin.com/company/yoursoftteam/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+            </ul>
           </div>
 
-          <figure class="hero-banner">
-            <img src="./We&#39;re available for marketing_files/hero-banner.png" width="720" height="673" alt="hero banner">
-          </figure>
-        </div>
-      </section>
-
-      <section class="section service" id="service" aria-label="service">
-        <div class="container">
-          <h2 class="h2 section-title">Services Tailored to Your Needs</h2>
-
-          <p class="section-text">
-            Welcome to Your Soft Team's comprehensive suite of digital solutions. 
-            Our dedicated team specializes in crafting tailored strategies to meet
-            your unique business objectives.
-          </p>
-
-          <ul class="grid-list">
+          <ul class="footer-list">
             <li>
-              <div class="service-card">
-                <div class="card-icon">
-                  <ion-icon name="desktop" role="img" aria-label="desktop"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="https://www.yoursoftteam.com/#" class="card-title">Digital Marketing</a>
-                </h3>
-
-                <p class="card-text">
-                  Our team of experts crafts bespoke digital marketing
-                  strategies tailored to your unique goals and target
-                  audience. From SEO and PPC to content marketing and email
-                  campaigns, we leverage the latest tools and techniques to
-                  maximize your online visibility and drive meaningful
-                  results.
-                </p>
-              </div>
+              <p class="footer-list-title">Sitemap</p>
             </li>
 
-            </ul>
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#service" class="footer-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="footer-link" data-nav-link>Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Digital Advertising</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Organic Marketing</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Web Solutions</a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section class="section contact" id="contact" aria-label="contact">
-        <div class="container">
-          <h2 class="h2 section-title">Let's Contact With Us</h2>
-
-          <p class="section-text">
-            FOR A QUICK ESTIMATE
-          </p>
-
-          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7gJzz0TxemDlc2hPQQ3FhDE_yiCS-jy7WCH7WRkpa_FINsw/formResponse" class="contact-form">
-            </form>
-          <ul class="contact-list">
-            </ul>
-        </div>
-      </section>
-    </article>
-  </main>
-
-  <footer class="footer">
+      </div>
     </footer>
 
-  <a href="https://www.yoursoftteam.com/#top" aria-label="back to top" data-back-top-btn="">
-    <ion-icon name="chevron-up" role="img" aria-label="chevron up"></ion-icon>
-  </a>
+    <!-- 
+      Copyright
+    -->
 
-  <script type="module" src="./We&#39;re available for marketing_files/ionicons.esm.js"></script>
-  <script nomodule="" src="./We&#39;re available for marketing_files/ionicons.js"></script>
-</body>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; Copyright 2024 All Rights Reserved by
+          <a href="#" class="copyright-link">YOUR SOFT TEAM (SMC-PRIVATE) LIMITED.</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      aria-label="back to top"
+      data-back-top-btn
+      class="back-top-btn"
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
